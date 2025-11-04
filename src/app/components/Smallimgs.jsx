@@ -1,11 +1,16 @@
 import Image from "next/image";
 import "../globals.css";
-import Arrows from "./Arrows";
+import { FaArrowLeft } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Smallimgs = () => {
   return (
     <div className="small-imgs-container">
-      <Arrows />
+      <div className="arrow">
+        <FaArrowLeft />
+        <p>1</p>
+        <FaArrowRight />
+      </div>
       <div className="navy-background">
         <Image src="/navy.png" alt="Navy Apple Watch" width={90} height={90} priority style={{ objectFit: "contain" }} />
       </div>
