@@ -5,37 +5,71 @@ import "../globals.css";
 
 const Header = () => {
   return (
-    <header className="header">
-      <nav className="header-nav">
+    <header className="w-full px-8 py-6">
+      <nav className="mx-auto flex max-w-[1200px] items-center justify-between">
         {/* Apple Logo */}
-        <div className="header-logo">
-          <SiApple size={52} color={"white"} />
+        <div className="flex items-center">
+          <SiApple size={42} color="white" />
         </div>
 
         {/* Navigation Links */}
-        <div className="header-links">
-          <ul>
+        <div className="hidden md:flex">
+          <ul className="flex list-none items-center gap-8 lg:gap-12">
             <li>
-              <a href="#mac">Mac</a>
+              <a
+                href="#mac"
+                className="text-lg text-white no-underline transition-opacity duration-300 hover:opacity-70"
+              >
+                Mac
+              </a>
             </li>
             <li>
-              <a href="#iphone">iPhone</a>
+              <a
+                href="#iphone"
+                className="text-lg text-white no-underline transition-opacity duration-300 hover:opacity-70"
+              >
+                iPhone
+              </a>
             </li>
             <li>
-              <a href="#ipad">iPad</a>
+              <a
+                href="#ipad"
+                className="text-lg text-white no-underline transition-opacity duration-300 hover:opacity-70"
+              >
+                iPad
+              </a>
             </li>
             <li>
-              <a href="#iwatch">iWatch</a>
+              <a
+                href="#iwatch"
+                className="rounded-full bg-white px-6 py-3 text-lg font-medium text-[#b6ccda] no-underline transition-all duration-300 hover:bg-gray-100"
+              >
+                iWatch
+              </a>
             </li>
             <li>
-              <a href="#support">Support</a>
+              <a
+                href="#support"
+                className="text-lg text-white no-underline transition-opacity duration-300 hover:opacity-70"
+              >
+                Support
+              </a>
             </li>
           </ul>
+        </div>
 
-          <div className="search-and-shopping">
-            <AiOutlineSearch size={30} color="white" className="search-icon" />
-            <LuShoppingBag size={30} color="white" className="shopping-icon" />
-          </div>
+        {/* Search and Shopping Icons */}
+        <div className="flex items-center gap-4">
+          <AiOutlineSearch
+            size={28}
+            color="white"
+            className="cursor-pointer transition-opacity duration-300 hover:opacity-70"
+          />
+          <LuShoppingBag
+            size={28}
+            color="white"
+            className="cursor-pointer transition-opacity duration-300 hover:opacity-70"
+          />
         </div>
       </nav>
     </header>

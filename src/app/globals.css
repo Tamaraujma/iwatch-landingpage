@@ -1,11 +1,11 @@
-/* @import "tailwindcss";
+@import "tailwindcss";
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
-}
+} */
 
-@theme inline {
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
@@ -17,7 +17,7 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-} */
+}  */
 * {
   margin: 0;
   padding: 0;
@@ -28,12 +28,12 @@ body {
   background: #b6ccda;
   color: var(--foreground);
   font-family: "Poppins", sans-serif;
-  margin: 0;
+  margin: 2rem;
   padding: 1rem 2rem;
 }
 
 /*Header*/
-.header {
+/* .header {
   padding: 1rem 2rem;
   width: 100%;
 }
@@ -98,10 +98,10 @@ body {
   .header-links {
     display: none;
   }
-}
+} */
 
 /*Headline*/
-.headline-container {
+/* .headline-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -132,10 +132,10 @@ body {
   .headline-container h1 {
     font-size: 2.5rem;
   }
-}
+} */
 
 /*BigImg*/
-.big-img-container {
+/* .big-img-container {
   min-height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -208,10 +208,10 @@ body {
   .dots {
     right: 1rem;
   }
-}
+} */
 
 /*Button*/
-.container {
+/* .container {
   display: flex;
   justify-content: left;
   padding: 0 6rem;
@@ -234,10 +234,10 @@ button {
     padding: 0 2rem;
     margin-left: 0;
   }
-}
+} */
 
 /*SmallImg*/
-.small-imgs-container {
+/* .small-imgs-container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -300,4 +300,4 @@ button {
     font-size: 20px;
     margin-top: -5px;
   }
-}
+} */
